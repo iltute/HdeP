@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap");
+main .whatsapp {
+  position: fixed;
+  right: 30px;
+  bottom: 250px;
+  filter: drop-shadow(2px 2px 2px #dddcda99); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  color: #ffffff; }
+
+main {
+  background-color: #201a17; }
+
 header {
   font-size: 16px;
   position: sticky;
@@ -177,6 +199,177 @@ main .ubicacion {
             padding: 7px;
             border-radius: 15px;
             font-weight: 600; }
+
+main .nosotros-video {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  main .nosotros-video .nosotros-video-texto {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    width: 200px;
+    padding: 0 0 0 50px; }
+    main .nosotros-video .nosotros-video-texto div h2 {
+      font-weight: 600;
+      font-size: 50px; }
+    main .nosotros-video .nosotros-video-texto div p {
+      font-weight: 200;
+      font-size: 30px;
+      color: #eb880e; }
+    main .nosotros-video .nosotros-video-texto .nosotros-video-iframe iframe {
+      border-radius: 15px;
+      border: #eb880e solid 2px;
+      box-shadow: -3px 3px 3px #ffffffab; }
+
+main .nosotros-galeria-texto {
+  margin: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  main .nosotros-galeria-texto .ngt-1 {
+    color: #ffffff;
+    width: 25%; }
+    main .nosotros-galeria-texto .ngt-1 h2 {
+      font-size: 50px;
+      font-weight: 600; }
+    main .nosotros-galeria-texto .ngt-1 p {
+      font-size: 20px;
+      color: #eb880e;
+      font-weight: 200; }
+  main .nosotros-galeria-texto .nosotros-galeria-imagenes {
+    margin: 20px;
+    width: 50%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px; }
+    main .nosotros-galeria-texto .nosotros-galeria-imagenes div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      border: #eb880e56 2px solid;
+      box-shadow: 2px 2px 2px white; }
+    main .nosotros-galeria-texto .nosotros-galeria-imagenes div .img1 {
+      grid-row: span 2; }
+
+main .grid-contenedor {
+  height: 800px;
+  background-color: #201a17;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas: "texto texto texto" "menu menu menu"; }
+  main .grid-contenedor .menu-titulo {
+    grid-area: texto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+  main .grid-contenedor .menu-imagenes {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    margin: 0 100px 0 100px; }
+    main .grid-contenedor .menu-imagenes div {
+      background-color: #eb880e;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      border: 2px #eb880e solid;
+      box-shadow: -3px 3px 3px #eb880e; }
+      main .grid-contenedor .menu-imagenes div img {
+        width: 98%;
+        height: 98%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: -3px 3px 3px black; }
+
+.contacto {
+  background-image: url(../img/m-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  height: 80dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .contacto div h2 {
+    background-color: #201a17ab;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px; }
+  .contacto .formulario {
+    background-color: #201a17ab;
+    width: 500px;
+    border: #eb880e 2px solid;
+    border-radius: 15px; }
+    .contacto .formulario form .personales div {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 10px; }
+      .contacto .formulario form .personales div input {
+        border: 2px solid #eb880e;
+        border-radius: 5px;
+        background-color: #ffffffab;
+        text-align: center; }
+    .contacto .formulario form .personales-genero {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px; }
+      .contacto .formulario form .personales-genero div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px; }
+        .contacto .formulario form .personales-genero div div input {
+          margin-left: 10px;
+          margin-right: 10px;
+          background-color: #eb880e; }
+    .contacto .formulario form .comentarios {
+      margin-top: 10px; }
+      .contacto .formulario form .comentarios textarea {
+        height: 50%;
+        border: #eb880e 2px solid;
+        border-radius: 15px;
+        background-color: #ffffffab;
+        text-align: center; }
+      .contacto .formulario form .comentarios .comentarios-botones input {
+        font-size: 15px;
+        text-align: center;
+        background-color: #eb880e;
+        color: #ffffff;
+        margin: 5px;
+        padding: 5px;
+        width: 100px;
+        border-radius: 10px; }
+        .contacto .formulario form .comentarios .comentarios-botones input:hover {
+          background-color: #ffffff;
+          color: #eb880e;
+          transition: 1s; }
 
 footer {
   background-color: #ffffff;
