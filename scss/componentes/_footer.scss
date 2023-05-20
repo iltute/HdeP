@@ -1,0 +1,34 @@
+footer{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+    color: #201a17;
+    div{
+        margin: 15px;
+        a{
+            h4{
+                color: #201a17;
+                font-weight: 600;
+                font-size: 28px;
+                text-decoration: none;
+            }
+            p{
+                color: #201a17;
+                font-weight: 600;
+                font-size: 10px;
+                text-decoration: overline;
+            }
+        }
+    }
+    div{
+        a{
+            img{
+                padding: 2px;
+                margin: 5px;
+            }
+        }
+    } 
+}
