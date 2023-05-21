@@ -294,14 +294,6 @@ main{
             text-align: center;
             align-items: center;
             justify-content: center;
-            div{
-                h2{
-            
-                }
-                .linea{
-            
-                }
-            }
         }
         .menu-imagenes{
             grid-area: menu;
@@ -326,9 +318,6 @@ main{
                     overflow: hidden;
                     border-radius: 15px;
                     box-shadow: -3px 3px 3px black;
-                }
-                h3{
-
                 }
             }
         }
@@ -355,9 +344,6 @@ main{
             border-radius: 10px;
             padding: 0px 20px 0px 20px;
         }
-        .linea{
-
-        }
     }
     .formulario{
         background-color: #201a17ab;
@@ -366,18 +352,12 @@ main{
         border-radius: 15px;
         form{
             .personales{
-                h3{
-
-                }
                 div{
                     display: flex;
                     justify-content: space-between;
                     margin-left: 100px;
                     margin-right: 100px;
                     margin-top: 10px;
-                    label{
-
-                    }
                     input{
                         border: 2px solid #eb880e;
                         border-radius: 5px;
@@ -392,9 +372,6 @@ main{
                 align-items: center;
                 flex-direction: column;
                 margin-top: 10px;
-                h3{
-
-                }
                 div{
                     display: flex;
                     justify-content: space-around;
@@ -403,30 +380,22 @@ main{
                     margin-right: 20px;
                     margin-top: 0px;
                     div{
-                        label{
-
-                        }
                         input{
                             margin-left: 10px;
                             margin-right: 10px;
                             background-color: #eb880e;
-
                         }
                     }
                 }
             }
             .comentarios{
                 margin-top: 10px;
-                h3{
-
-                }
                 textarea{
                     height: 50%;
                     border: #eb880e 2px solid;
                     border-radius: 15px;
                     background-color: #ffffffab;
                     text-align: center;
-
                 }
                 .comentarios-botones{
                     input{
