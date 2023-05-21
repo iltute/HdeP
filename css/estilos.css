@@ -221,10 +221,10 @@ main .nosotros-video {
       font-weight: 200;
       font-size: 30px;
       color: #eb880e; }
-    main .nosotros-video .nosotros-video-texto .nosotros-video-iframe iframe {
-      border-radius: 15px;
-      border: #eb880e solid 2px;
-      box-shadow: -3px 3px 3px #ffffffab; }
+  main .nosotros-video .nosotros-video-iframe iframe {
+    border-radius: 15px;
+    border: #eb880e solid 2px;
+    box-shadow: -3px 3px 3px #ffffffab; }
 
 main .nosotros-galeria-texto {
   margin: 20px;
