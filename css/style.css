@@ -518,8 +518,8 @@ footer div a img {
 
 
 
-/* medias */
 
+/* PASADO 1/2--------------------------*/
 @media screen and (max-width: 1150px) {
     .nosotros-video-iframe iframe {
         width: 75%;
@@ -551,11 +551,13 @@ footer div a img {
         height: 1100px;
     }
 }
-
-
 @media screen and (max-width: 768px) {
     .hero div h2 {
         font-size: 70px;
+    }
+    footer div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
     }
     .nosotros-galeria-imagenes {
         width: 50%;
@@ -564,13 +566,9 @@ footer div a img {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 100px;
     }
-    .img8 {
+    .img8{
         grid-column: span 2;
-    }
-    footer div:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-    }
+    } 
     .menu-imagenes {
         grid-area: menu;
         display: grid;
@@ -583,10 +581,18 @@ footer div a img {
         height: 1100px;
     }
 }
+    /* PASADO 2/2--------------------------*/
+
+
+
+    /* PASADO 1/2--------------------------*/
 @media screen and (max-width: 600px) {
     .nosotros-video {
         display: flex;
         flex-direction: column;
+    }
+    .nosotros-video-iframe iframe {
+        width: 100%;
     }
     .nosotros-galeria-texto {
         height: 80%;
@@ -610,9 +616,9 @@ footer div a img {
     .img1 {
         grid-row: span 1;
     }
-    .nosotros-video-iframe iframe {
-        width: 100%;
-    }
+    /* PASADO 2/2--------------------------*/
+
+    /* PASADO 1/2--------------------------*/
     .contacto{
         height: auto;
     }
@@ -641,9 +647,16 @@ footer div a img {
     .personales div input {
         width: auto;
     }
+    /* PASADO 2/2--------------------------*/
+/* PASADO 1/2--------------------------*/
+
     footer div:nth-child(3) {
         display: flex;
         flex-direction: column;
+    }
+    /* PASADO 1/2--------------------------*/
+    .grid-contenedor{
+        height: 2050px;
     }
     .menu-imagenes {
         grid-area: menu;
@@ -653,10 +666,14 @@ footer div a img {
         gap: 20px;
         margin: 0 100px 0 100px;
     }
-    .grid-contenedor{
-        height: 2050px;
-    }
 }
+    /* PASADO 2/2--------------------------*/
+
+
+
+
+
+    /* PASADO 1/2--------------------------*/
 @media screen and (max-width: 510px) {
     .formulario{
         max-width: 90%;
@@ -666,12 +683,20 @@ footer div a img {
     margin: 0;
     }
 }
+    /* PASADO 2/2--------------------------*/
+
+
+
+
+    /* PASADO 1/2--------------------------*/
+
 @media screen and (max-width: 480px) {
     .hero div h2 {
         font-size: 50px;
     }
     .menu-imagenes {
-        margin: 0 50px 0 50px;}
+        margin: 0 50px 0 50px;
+    }
 }
 
 @media screen and (max-width: 375px) {

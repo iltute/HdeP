@@ -394,3 +394,148 @@ footer {
   footer div a img {
     padding: 2px;
     margin: 5px; }
+
+@media screen and (max-width: 1150px) {
+  .nosotros-video-iframe iframe {
+    width: 75%; } }
+
+@media screen and (max-width: 1075px) {
+  .whatsapp {
+    display: none; } }
+
+@media screen and (max-width: 1075px) {
+  .mapa {
+    height: 80%;
+    width: 80%; }
+    .mapa iframe {
+      height: 100%;
+      width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  .grid-contenedor {
+    height: 1100px; }
+    .grid-contenedor .menu-imagenes {
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 300px;
+      gap: 20px;
+      margin: 0 50px 0 50px; } }
+
+@media screen and (max-width: 768px) {
+  .hero div h2 {
+    font-size: 70px; } }
+
+@media screen and (max-width: 768px) {
+  footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .nosotros-galeria-imagenes {
+    width: 50%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px; }
+    .nosotros-galeria-imagenes .img8 {
+      grid-column: span 2; } }
+
+@media screen and (max-width: 768px) {
+  .grid-contenedor {
+    height: 1100px; }
+    .grid-contenedor .menu-imagenes {
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 300px;
+      gap: 20px;
+      margin: 0 50px 0 50px; } }
+
+@media screen and (max-width: 600px) {
+  .nosotros-video {
+    display: flex;
+    flex-direction: column; }
+    .nosotros-video .nosotros-video.iframe iframe {
+      width: 100%; }
+  .nosotros-galeria-texto {
+    height: 80%;
+    display: flex;
+    flex-direction: column; }
+    .nosotros-galeria-texto .ngt-1 {
+      width: 75%;
+      height: 50%;
+      font-size: 20px; }
+    .nosotros-galeria-texto .nosotros-galeria-imagenes {
+      width: 50%;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr; }
+      .nosotros-galeria-texto .nosotros-galeria-imagenes .img1 {
+        grid-row: span 1; }
+      .nosotros-galeria-texto .nosotros-galeria-imagenes .img8 {
+        grid-column: span 1; } }
+
+@media screen and (max-width: 600px) {
+  .contacto {
+    height: auto; }
+    .contacto div h2 {
+      margin-top: 20px; }
+    .contacto .formulario {
+      height: auto;
+      max-width: 100%;
+      margin: 10px;
+      padding: 10px; }
+      .contacto .formulario form {
+        height: auto; }
+        .contacto .formulario form .personales {
+          font-size: 15px;
+          height: 100%; }
+          .contacto .formulario form .personales div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .contacto .formulario form .personales div input {
+              width: auto; } }
+
+@media screen and (max-width: 600px) {
+  footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .grid-contenedor {
+    height: 2050px; }
+    .grid-contenedor .menu-imagenes {
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: 300px;
+      gap: 20px;
+      margin: 0 100px 0 100px; } }
+
+@media screen and (max-width: 510px) {
+  .formulario {
+    max-width: 90%; }
+    .formulario .personales-genero div {
+      align-items: center;
+      margin: 0; } }
+
+@media screen and (max-width: 480px) {
+  .hero div h2 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 480px) {
+  .menu-imagenes {
+    margin: 0 50px 0 50px; } }
+
+@media screen and (max-width: 375px) {
+  .formulario {
+    font-size: 15px; }
+    .formulario form .comentarios textarea {
+      width: 150px; } }
+
+@media screen and (max-width: 375px) {
+  .menu-imagenes {
+    margin: 0 50px 0 50px; } }
