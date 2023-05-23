@@ -372,6 +372,61 @@ main .grid-contenedor {
           color: #eb880e;
           transition: 1s; }
 
+main .franquicias {
+  padding-bottom: 50px;
+  height: 650px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  main .franquicias h2 {
+    color: #eb880e; }
+  main .franquicias .linea {
+    width: 200px;
+    background-color: #eb880e;
+    height: 4px;
+    border-radius: 15px;
+    margin-bottom: 10px; }
+  main .franquicias .franquicias-contenedor {
+    display: flex;
+    justify-content: space-between;
+    height: auto; }
+    main .franquicias .franquicias-contenedor .franquicias-img {
+      height: auto;
+      width: 100%;
+      margin: 50px; }
+      main .franquicias .franquicias-contenedor .franquicias-img img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 10px;
+        border: #eb880e solid 2px; }
+    main .franquicias .franquicias-contenedor .franquicias-txt {
+      margin: 20px;
+      color: #ffffff; }
+      main .franquicias .franquicias-contenedor .franquicias-txt p {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 20px; }
+      main .franquicias .franquicias-contenedor .franquicias-txt ul {
+        text-align: left;
+        font-weight: 200; }
+  main .franquicias .franquicias-boton {
+    position: relative; }
+    main .franquicias .franquicias-boton a {
+      position: absolute;
+      left: 250px;
+      bottom: 20px;
+      background-color: #eb880e;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 5px; }
+
 footer {
   background-color: #ffffff;
   display: flex;

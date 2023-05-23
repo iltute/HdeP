@@ -419,3 +419,73 @@ main{
         }
     }
 }
+main{
+    .franquicias{
+        padding-bottom: 50px;
+        height: 650px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: $color-secundario;
+        }
+        .linea{
+            width: 200px;
+            background-color: $color-secundario;
+            height: 4px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .franquicias-contenedor{
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            .franquicias-img{
+                height: auto;
+                width: 100%;
+                margin: 50px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    border:#eb880e solid 2px;
+                }
+            }
+            .franquicias-txt{
+                margin: 20px;
+                color: #ffffff;
+                p{
+                    text-align: left;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+                ul{
+                    text-align: left;
+                    font-weight: 200;
+                }
+            }
+        }
+        .franquicias-boton{
+            position: relative;
+            a{
+                position: absolute;
+                left: 250px;
+                bottom: 20px;
+                background-color: $color-secundario;
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+
+

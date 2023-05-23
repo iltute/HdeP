@@ -1,2 +1,10 @@
 $color-primario: #201a17;
 $color-secundario: #eb880e;
+
+
+//* aplicar en todo el proyecto este mixing
+@mixin  flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}   

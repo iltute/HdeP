@@ -612,3 +612,49 @@ footer div a img {
         margin: 0 50px 0 50px;
     }
 }
+
+.franquicias{
+    text-align: right;
+    color: #ffffff;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.franquicias div .linea{
+    width: 150px;
+}
+.franquicias-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.franquicias-img{
+    height: 100%;
+    width: 100%;
+    margin: 50px;
+}
+.franquicias-img img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+    border:#eb880e solid 2px;
+}
+.franquicias-txt{
+    margin: 20px;
+    color: #ffffff;
+}
+.franquicias-txt p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.franquicias-txt ul{
+    text-align: left;
+    font-weight: 200;
+}
