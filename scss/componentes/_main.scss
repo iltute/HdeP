@@ -9,20 +9,23 @@ main{
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        text-align: right;
+        text-align: center;
         color: #ffffff;
-        div{
-            background-color: #201a179f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .hero-titulo{
             h2{
                 font-size: 100px;
-                font-weight: 100;
+                font-weight: 500;
                 padding: 10px;
                 color: #ffffff;
             }
             p{
-                font-size: 16px;
+                font-size: 40px;
                 padding: 10px;
-                font-weight: 100;    
+                font-weight: 300;    
             }
         }
     }
@@ -64,13 +67,13 @@ main{
                 font-size: 13px;
                 font-weight: 200;
                 border-radius: 5px;
+                transition: 2s ease-in;
                 &:hover{
                     background-color: #ffffff;
                     color: $color-secundario;
                     border: $color-secundario 3px solid;
                     font-weight: 400;
                     padding: 2px;
-                    transition: 1s;
                     padding: 5px;
                     border-radius: 5px;
                 }
@@ -196,12 +199,12 @@ main{
                     text-decoration: none;
                     filter: drop-shadow(5px 5px 2px black);
                     font-weight: 600;
+                    transition: 1s ease-in;
                     &:hover{
                         background-color: #ffffff;
                         color: $color-secundario;
                         border: $color-secundario 3px solid;
                         padding: 2px;
-                        transition: 1s;
                         padding: 7px;
                         border-radius: 15px;
                         font-weight: 600;
@@ -369,11 +372,13 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    div{
-        h2{
-            background-color: #201a17ab;
-            border-radius: 10px;
-            padding: 0px 20px 0px 20px;
+    .contacto-titulo{
+        margin-bottom: 50px;
+        .linea{
+            background-color: $color-secundario;
+            height: 4px;
+            border-radius: 15px;
+            margin-bottom: 10px; 
         }
     }
     .formulario{
@@ -437,10 +442,10 @@ main{
                         padding: 5px;
                         width: 100px;
                         border-radius: 10px;
+                        transition: 1s ease-in;
                         &:hover{
                             background-color: #ffffff;
                             color: $color-secundario;
-                            transition: 1s;
                         }
                     }
                 }
@@ -479,7 +484,7 @@ main{
         .franquicias-contenedor{
             display: flex;
             justify-content: space-between;
-            height: auto;
+            height: 100%;
             .franquicias-img{
                 height: auto;
                 width: 100%;
@@ -508,7 +513,7 @@ main{
                     font-weight: 400;
                 }
             }
-        }
+        }  
         .franquicias-boton{
             position: relative;
             a{

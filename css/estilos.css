@@ -2,7 +2,7 @@
 main .whatsapp {
   position: fixed;
   right: 30px;
-  bottom: 250px;
+  bottom: 50px;
   filter: drop-shadow(2px 2px 2px #dddcda99); }
 
 * {
@@ -36,19 +36,21 @@ main .hero {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  text-align: right;
-  color: #ffffff; }
-  main .hero div {
-    background-color: #201a179f; }
-    main .hero div h2 {
-      font-size: 100px;
-      font-weight: 100;
-      padding: 10px;
-      color: #ffffff; }
-    main .hero div p {
-      font-size: 16px;
-      padding: 10px;
-      font-weight: 100; }
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .hero .hero-titulo h2 {
+    font-size: 100px;
+    font-weight: 500;
+    padding: 10px;
+    color: #ffffff; }
+  main .hero .hero-titulo p {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 300; }
 
 main .nosotros {
   background-color: #212529;
@@ -84,14 +86,14 @@ main .nosotros {
       color: #eb880e;
       font-size: 13px;
       font-weight: 200;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: 2s ease-in; }
       main .nosotros .nosotros-texto a:hover {
         background-color: #ffffff;
         color: #eb880e;
         border: #eb880e 3px solid;
         font-weight: 400;
         padding: 2px;
-        transition: 1s;
         padding: 5px;
         border-radius: 5px; }
   main .nosotros .nosotros-imagen {
@@ -198,13 +200,13 @@ main .products {
         border-radius: 15px;
         text-decoration: none;
         filter: drop-shadow(5px 5px 2px black);
-        font-weight: 600; }
+        font-weight: 600;
+        transition: 1s ease-in; }
         main .products .products-card div a:hover {
           background-color: #ffffff;
           color: #eb880e;
           border: #eb880e 3px solid;
           padding: 2px;
-          transition: 1s;
           padding: 7px;
           border-radius: 15px;
           font-weight: 600; }
@@ -342,10 +344,13 @@ main .products {
   justify-content: center;
   align-items: center;
   text-align: center; }
-  .contacto div h2 {
-    background-color: #201a17ab;
-    border-radius: 10px;
-    padding: 0px 20px 0px 20px; }
+  .contacto .contacto-titulo {
+    margin-bottom: 50px; }
+    .contacto .contacto-titulo .linea {
+      background-color: #eb880e;
+      height: 4px;
+      border-radius: 15px;
+      margin-bottom: 10px; }
   .contacto .formulario {
     background-color: #201a17ab;
     width: 500px;
@@ -394,11 +399,11 @@ main .products {
         margin: 5px;
         padding: 5px;
         width: 100px;
-        border-radius: 10px; }
+        border-radius: 10px;
+        transition: 1s ease-in; }
         .contacto .formulario form .comentarios .comentarios-botones input:hover {
           background-color: #ffffff;
-          color: #eb880e;
-          transition: 1s; }
+          color: #eb880e; }
 
 .franquicias-main {
   background-image: url(../img/m-background.jpg);
@@ -427,7 +432,7 @@ main .products {
     .franquicias-main .franquicias .franquicias-contenedor {
       display: flex;
       justify-content: space-between;
-      height: auto; }
+      height: 100%; }
       .franquicias-main .franquicias .franquicias-contenedor .franquicias-img {
         height: auto;
         width: 100%;
@@ -497,7 +502,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .mapa {
     height: auto;
-    max-width: 500px; }
+    width: 500px; }
     .mapa iframe {
       height: auto;
       max-width: 480px;
@@ -510,16 +515,20 @@ footer {
     .mapa iframe {
       height: auto;
       max-width: 480px;
-      margin: 5px 5px 0 5px; } }
+      margin: 5px 5px 0 5px;
+      overflow: hidden;
+      object-fit: cover; } }
 
 @media screen and (max-width: 425px) {
   .mapa {
     height: auto;
-    max-width: 200px; }
+    width: 200px; }
     .mapa iframe {
       height: auto;
-      max-width: 180px;
-      margin: 5px 5px 0 5px; } }
+      width: 100px;
+      margin: 5px 5px 0 5px;
+      overflow: hidden;
+      object-fit: cover; } }
 
 @media screen and (max-width: 900px) {
   .grid-contenedor {

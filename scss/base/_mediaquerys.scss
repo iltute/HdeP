@@ -11,7 +11,7 @@
 @media screen and (max-width: 1024px) {
     .mapa{
         height: auto;
-        max-width: 500px;
+        width: 500px;
         iframe{
             height: auto;
             max-width: 480px;
@@ -27,17 +27,21 @@
             height: auto;
             max-width: 480px;
             margin: 5px 5px 0 5px;
+            overflow: hidden;
+            object-fit: cover;
         }
     }
 }
 @media screen and (max-width: 425px) {
     .mapa{
         height: auto;
-        max-width: 200px;
+        width: 200px;
         iframe{ 
             height: auto;
-            max-width: 180px;
+            width: 100px;
             margin: 5px 5px 0 5px;
+            overflow: hidden;
+            object-fit: cover;
         }
     }
 }
