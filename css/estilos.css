@@ -28,7 +28,7 @@ header {
 
 main .hero {
   background-image: url(../img/m-background.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   height: 600px;
   width: auto;
@@ -213,7 +213,7 @@ main .products {
 
 .nosotros-main {
   background-image: url(../img/m-background.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,20 +281,21 @@ main .products {
 
 .menu-main {
   background-image: url(../img/m-background.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
   .menu-main .grid-contenedor {
-    height: 800px;
+    height: 745px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
     grid-template-areas: "texto texto texto" "menu menu menu"; }
     .menu-main .grid-contenedor .menu-titulo {
+      margin-top: 60px;
       grid-area: texto;
       display: flex;
       text-align: center;
@@ -309,10 +310,11 @@ main .products {
       grid-area: menu;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 300px;
+      grid-auto-rows: 250px;
       gap: 20px;
-      margin: 0 100px 0 100px; }
-      .menu-main .grid-contenedor .menu-imagenes div {
+      margin: 50px 200px 0 200px; }
+      .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor {
+        position: relative;
         background-color: #eb880e;
         display: flex;
         flex-direction: column;
@@ -320,8 +322,8 @@ main .products {
         align-items: center;
         border-radius: 15px;
         border: 2px #ffffff solid;
-        box-shadow: -3px 3px 3px #ffffff; }
-        .menu-main .grid-contenedor .menu-imagenes div img {
+        box-shadow: -3px 3px 1px #ffffff; }
+        .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor img {
           width: 98%;
           height: 98%;
           object-fit: cover;
@@ -331,7 +333,7 @@ main .products {
 
 .contacto {
   background-image: url(../img/m-background.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,7 +409,7 @@ main .products {
 
 .franquicias-main {
   background-image: url(../img/m-background.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
@@ -420,10 +422,8 @@ main .products {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
-    .franquicias-main .franquicias .franquicias-titulo h2 {
-      color: #eb880e; }
     .franquicias-main .franquicias .franquicias-titulo .linea {
       background-color: #eb880e;
       height: 4px;
@@ -436,7 +436,10 @@ main .products {
       .franquicias-main .franquicias .franquicias-contenedor .franquicias-img {
         height: auto;
         width: 100%;
-        margin: 50px; }
+        margin: 50px;
+        border: #eb880e 2px;
+        box-shadow: #ffffff 2px 2px 2px;
+        border-radius: 10px; }
         .franquicias-main .franquicias .franquicias-contenedor .franquicias-img img {
           height: 100%;
           width: 100%;
@@ -456,16 +459,22 @@ main .products {
         .franquicias-main .franquicias .franquicias-contenedor .franquicias-txt ul {
           text-align: left;
           font-weight: 400; }
-    .franquicias-main .franquicias .franquicias-boton {
-      position: relative; }
-      .franquicias-main .franquicias .franquicias-boton a {
-        position: absolute;
-        left: 250px;
-        bottom: 20px;
-        background-color: #eb880e;
-        color: #ffffff;
-        border-radius: 5px;
-        padding: 5px; }
+    .franquicias-main .franquicias .franquicias-boton a {
+      left: 250px;
+      bottom: 20px;
+      background-color: #eb880e;
+      color: #ffffff;
+      border: #eb880e 3px solid;
+      border-radius: 5px;
+      padding: 5px;
+      transition: 2s ease-in; }
+      .franquicias-main .franquicias .franquicias-boton a:hover {
+        background-color: #ffffff;
+        color: #eb880e;
+        border: #eb880e 3px solid;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 5px; }
 
 footer {
   background-color: #ffffff;
