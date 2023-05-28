@@ -156,7 +156,7 @@ main{
             align-items: center;
             width: 100%;
             height: 90%;
-            div{
+            .tarjetita{
                 position: relative;
                 border: 2px solid #eb880e56;
                 border-radius: 15px;
@@ -171,22 +171,24 @@ main{
                     width: 100%;
                     object-fit: cover;
                 }
-                h3{
+                .tarjetita-hover{
                     position: absolute;
-                    bottom: 119px;
-                    width: 100%;
+                    opacity: 0; 
+                    display: flex;
+                    flex-direction: column;
                     text-align: center;
-                    font-weight: 200;
-                    background-color: $color-primario;
-                }
-                p{
-                    position: absolute;
-                    bottom: 100px;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
                     width: 100%;
-                    text-align: center;
-                    font-size: 12px;
-                    font-weight: 200;
-                    background-color: $color-primario;
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: 0.5s;
+                    &:hover{
+                        border-radius: 15px;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        opacity: 1;
+                    }
                 }
                 a{
                     position: absolute;
