@@ -40,7 +40,7 @@ main .hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 90dvh;
   width: auto; }
   main .hero .hero-titulo h2 {
     font-size: 100px;
