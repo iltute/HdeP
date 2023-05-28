@@ -87,7 +87,7 @@ main .nosotros {
       font-size: 13px;
       font-weight: 200;
       border-radius: 5px;
-      transition: 2s ease-in; }
+      transition: 0.5s ease-in; }
       main .nosotros .nosotros-texto a:hover {
         background-color: #ffffff;
         color: #eb880e;
@@ -201,10 +201,10 @@ main .products {
         text-decoration: none;
         filter: drop-shadow(5px 5px 2px black);
         font-weight: 600;
-        transition: 1s ease-in; }
+        transition: 0.5s ease-in; }
         main .products .products-card div a:hover {
-          background-color: #ffffff;
-          color: #eb880e;
+          background-color: #25D366;
+          color: #ffffff;
           border: #eb880e 3px solid;
           padding: 2px;
           padding: 7px;
@@ -323,6 +323,8 @@ main .products {
         border-radius: 15px;
         border: 2px #ffffff solid;
         box-shadow: -3px 3px 1px #ffffff; }
+        .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor:hover {
+          background-color: rgba(0, 0, 0, 0.467); }
         .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor img {
           width: 98%;
           height: 98%;
@@ -330,6 +332,59 @@ main .products {
           overflow: hidden;
           border-radius: 15px;
           box-shadow: -3px 3px 3px black; }
+        .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over {
+          position: absolute;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+          color: #ffffff;
+          transition: 0.5s; }
+          .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over a {
+            text-decoration: none;
+            text-align: center;
+            background-color: #eb880e;
+            color: #ffffff;
+            margin: 5px;
+            padding: 5px;
+            width: 100px;
+            border-radius: 10px;
+            transition: 0.5s ease-in; }
+          .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over p {
+            color: #ffffff;
+            text-align: center;
+            max-width: 90%;
+            max-height: 100px;
+            word-wrap: break-word; }
+          .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over:hover {
+            color: #eb880e;
+            border-radius: 15px;
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.8); }
+            .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over:hover a {
+              text-decoration: none;
+              text-align: center;
+              background-color: #eb880e;
+              color: #ffffff;
+              margin: 5px;
+              padding: 5px;
+              width: 100px;
+              border-radius: 10px;
+              transition: 0.5s ease-in; }
+              .menu-main .grid-contenedor .menu-imagenes .menu-imagenes-contenedor .menu-imagenes-over:hover a:hover {
+                text-align: center;
+                background-color: #25D366;
+                color: #ffffff;
+                margin: 5px;
+                padding: 5px;
+                width: 100px;
+                border-radius: 10px;
+                transition: 0.5s ease-in; }
 
 .contacto {
   background-image: url(../img/m-background.jpg);
@@ -402,7 +457,7 @@ main .products {
         padding: 5px;
         width: 100px;
         border-radius: 10px;
-        transition: 1s ease-in; }
+        transition: 0.5s ease-in; }
         .contacto .formulario form .comentarios .comentarios-botones input:hover {
           background-color: #ffffff;
           color: #eb880e; }
@@ -467,7 +522,7 @@ main .products {
       border: #eb880e 3px solid;
       border-radius: 5px;
       padding: 5px;
-      transition: 2s ease-in; }
+      transition: 0.5s ease-in; }
       .franquicias-main .franquicias .franquicias-boton a:hover {
         background-color: #ffffff;
         color: #eb880e;
@@ -500,22 +555,10 @@ footer {
     padding: 2px;
     margin: 5px; }
 
-@media screen and (max-width: 1150px) {
-  .nosotros-video-iframe iframe {
-    width: 75%; } }
-
-@media screen and (max-width: 1075px) {
-  .whatsapp {
-    display: none; } }
-
-@media screen and (max-width: 1024px) {
-  .mapa {
-    height: auto;
-    width: 500px; }
-    .mapa iframe {
-      height: auto;
-      max-width: 480px;
-      margin: 5px 5px 0 5px; } }
+/* MEDIAS DEL INDEX + FOOTER */
+@media screen and (max-width: 480px) {
+  .hero div h2 {
+    font-size: 50px; } }
 
 @media screen and (max-width: 768px) {
   .mapa {
@@ -539,6 +582,25 @@ footer {
       overflow: hidden;
       object-fit: cover; } }
 
+@media screen and (max-width: 1023px) {
+  .whatsapp {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column; } }
+
+/* MEDIAS @NOSOTROS */
+@media screen and (max-width: 1150px) {
+  .nosotros-video-iframe iframe {
+    width: 75%; } }
+
 @media screen and (max-width: 900px) {
   .grid-contenedor {
     height: 1100px; }
@@ -549,15 +611,6 @@ footer {
       grid-auto-rows: 300px;
       gap: 20px;
       margin: 0 50px 0 50px; } }
-
-@media screen and (max-width: 768px) {
-  .hero div h2 {
-    font-size: 70px; } }
-
-@media screen and (max-width: 768px) {
-  footer div:nth-child(3) {
-    display: flex;
-    flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
   .nosotros-galeria-imagenes {
@@ -628,11 +681,6 @@ footer {
               width: auto; } }
 
 @media screen and (max-width: 600px) {
-  footer div:nth-child(3) {
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 600px) {
   .grid-contenedor {
     height: 2050px; }
     .grid-contenedor .menu-imagenes {
@@ -649,10 +697,6 @@ footer {
     .formulario .personales-genero div {
       align-items: center;
       margin: 0; } }
-
-@media screen and (max-width: 480px) {
-  .hero div h2 {
-    font-size: 50px; } }
 
 @media screen and (max-width: 480px) {
   .menu-imagenes {
