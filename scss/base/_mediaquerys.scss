@@ -10,6 +10,9 @@
         }
     }
 }
+
+/*------------------------------768-------------------------------*/
+
 @media screen and (max-width: 768px){
     main{
         .ubicacion{
@@ -123,6 +126,9 @@
         }
     }
 }
+
+/*------------------------------733-------------------------------*/
+
 @media screen and (max-width: 733px) {
     main{
         .hero{
@@ -137,6 +143,39 @@
         }
     }
 }
+
+/*------------------------------629-------------------------------*/
+
+@media screen and (max-width: 629px) {
+    footer{
+        .footer-hdp{
+            h4{
+                font-size: 20px ;
+                font-weight: 600;
+            }
+            p{
+                text-decoration: none;
+                font-size: 10px;
+                font-weight: 200;
+            }
+        }
+        p{
+            font-size: 12px;
+            font-weight: 200;
+        }
+        .footer-redes{
+            display: flex;
+            flex-direction: column;
+            img{
+                height: 60%;
+                width: 60%;
+            }          
+        }
+    }
+}
+
+/*------------------------------555-------------------------------*/
+
 @media screen and (max-width: 555px) {
     main{
         .hero{
@@ -150,7 +189,59 @@
             }
         }
     }
+    .contacto{
+        .contacto-titulo{
+            margin: 0 0 20px 0;
+            h2{
+                font-size: 25px;
+                font-weight: 200;
+            }
+            .linea{
+                height: 2px;
+            }
+        }
+        .formulario{
+            width: 90%;
+            form{
+                width: 100%;
+                .personales{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    div{
+                        margin: 10px 20px 10px 20px;
+                        width: 90%;
+                    }
+                }
+                .personales-genero{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    div{
+                        margin: 0px;
+                        width: 75%;
+                    }
+                }
+                .comentarios{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    .comentarios-botones{
+                        input{
+                            font-size:12px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+/*------------------------------426-------------------------------*/
+
 @media screen and (max-width: 426px) {
     main{
         .ubicacion{
@@ -385,6 +476,9 @@
         }
     }
 }
+
+/*------------------------------377-------------------------------*/
+
 @media screen and (max-width: 377px) {
     main{
         .hero{
@@ -398,7 +492,43 @@
             }
         }
     }
+    .contacto{
+        .formulario{
+            form{
+                .personales{
+                    div{
+                        margin: 5px 10px 5px 10px;
+                        width: 90%;
+                        input{
+                            width: 130px;
+                        }
+                    }
+                }
+                .personales-genero{
+                    div{
+                        margin: 0px;
+                        width: 75%;
+                        div{
+                            width: 50%;
+                            input{
+                                margin: 5px
+                            }
+                        }
+                    }
+                }
+                .comentarios{
+                    textarea{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+/*------------------------------321-------------------------------*/
+
 @media screen and (max-width: 321px){
     .franquicias-main{
         height: 730px;

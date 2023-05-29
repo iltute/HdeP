@@ -561,6 +561,7 @@ footer {
     main .ubicacion .mapa iframe {
       width: 100%; } }
 
+/*------------------------------768-------------------------------*/
 @media screen and (max-width: 768px) {
   main .ubicacion .mapa {
     width: 75%; }
@@ -638,18 +639,68 @@ footer {
     .franquicias-main .franquicias .franquicias-boton {
       margin-top: 40px; } }
 
+/*------------------------------733-------------------------------*/
 @media screen and (max-width: 733px) {
   main .hero .hero-titulo h2 {
     font-size: 75px; }
   main .hero .hero-titulo p {
     font-size: 25px; } }
 
+/*------------------------------629-------------------------------*/
+@media screen and (max-width: 629px) {
+  footer .footer-hdp h4 {
+    font-size: 20px;
+    font-weight: 600; }
+  footer .footer-hdp p {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 200; }
+  footer p {
+    font-size: 12px;
+    font-weight: 200; }
+  footer .footer-redes {
+    display: flex;
+    flex-direction: column; }
+    footer .footer-redes img {
+      height: 60%;
+      width: 60%; } }
+
+/*------------------------------555-------------------------------*/
 @media screen and (max-width: 555px) {
   main .hero .hero-titulo h2 {
     font-size: 50px; }
   main .hero .hero-titulo p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .contacto .contacto-titulo {
+    margin: 0 0 20px 0; }
+    .contacto .contacto-titulo h2 {
+      font-size: 25px;
+      font-weight: 200; }
+    .contacto .contacto-titulo .linea {
+      height: 2px; }
+  .contacto .formulario {
+    width: 90%; }
+    .contacto .formulario form {
+      width: 100%; }
+      .contacto .formulario form .personales h3 {
+        font-size: 20px;
+        font-weight: 200; }
+      .contacto .formulario form .personales div {
+        margin: 10px 20px 10px 20px;
+        width: 90%; }
+      .contacto .formulario form .personales-genero h3 {
+        font-size: 20px;
+        font-weight: 200; }
+      .contacto .formulario form .personales-genero div {
+        margin: 0px;
+        width: 75%; }
+      .contacto .formulario form .comentarios h3 {
+        font-size: 20px;
+        font-weight: 200; }
+      .contacto .formulario form .comentarios .comentarios-botones input {
+        font-size: 12px; } }
 
+/*------------------------------426-------------------------------*/
 @media screen and (max-width: 426px) {
   main .ubicacion div h2 {
     font-size: 25px; }
@@ -786,12 +837,28 @@ footer {
       .contacto .formulario form .comentarios .comentarios-botones input {
         font-size: 12px; } }
 
+/*------------------------------377-------------------------------*/
 @media screen and (max-width: 377px) {
   main .hero .hero-titulo h2 {
     font-size: 35px; }
   main .hero .hero-titulo p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .contacto .formulario form .personales div {
+    margin: 5px 10px 5px 10px;
+    width: 90%; }
+    .contacto .formulario form .personales div input {
+      width: 130px; }
+  .contacto .formulario form .personales-genero div {
+    margin: 0px;
+    width: 75%; }
+    .contacto .formulario form .personales-genero div div {
+      width: 50%; }
+      .contacto .formulario form .personales-genero div div input {
+        margin: 5px; }
+  .contacto .formulario form .comentarios textarea {
+    width: 90%; } }
 
+/*------------------------------321-------------------------------*/
 @media screen and (max-width: 321px) {
   .franquicias-main {
     height: 730px; }
