@@ -11,6 +11,65 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .nosotros-main{
+        height: 1700px;
+        .nosotros-video{
+            width: auto;
+            height: auto;
+            padding-top: 30px  ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .nosotros-video-texto{
+                text-align: center;
+                width: 500px;
+                div{
+                    h2{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .nosotros-video-iframe{
+                iframe{
+                    width: 600px;
+                    height: 500px;
+                }
+            }
+        }
+        .nosotros-galeria-texto{
+            display: flex;
+            flex-direction: column;
+            padding-top: 150px;
+            .ngt-1{
+                width: 75%;
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .nosotros-galeria-imagenes{
+                height: auto;
+                margin: 20px;
+                width: 80%;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 150px;
+                .img7{
+                    grid-row: span 2;
+                }
+            }
+        }
+    }
+}
+
 /*------------------------------768-------------------------------*/
 
 @media screen and (max-width: 768px){
@@ -142,6 +201,38 @@
             }
         }
     }
+    .franquicias-main{
+        height: 700px;
+        .franquicias{
+            padding-top: 10px;
+            .franquicias-titulo{
+                h2{
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+            .franquicias-contenedor{
+                .franquicias-txt{
+                    width: 90%;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .franquicias-boton{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 /*------------------------------629-------------------------------*/
@@ -170,6 +261,140 @@
                 height: 60%;
                 width: 60%;
             }          
+        }
+    }
+    .franquicias-main{
+        height: 650px;
+        .franquicias{
+            padding-top: 10px;
+            .franquicias-titulo{
+                h2{
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+            .franquicias-contenedor{
+                .franquicias-img{
+                    display: none;
+                }
+                .franquicias-txt{
+                    width: 90%;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .franquicias-boton{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .nosotros-main{
+        height: auto;
+        .nosotros-video{
+            .nosotros-video-texto{
+                width: 98%;
+                div{
+                    h2{
+                        font-size: 25px;                  
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .nosotros-video-iframe{
+                iframe{
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        }
+        .nosotros-galeria-texto{
+            padding-top: 20px;
+            .ngt-1{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .nosotros-galeria-imagenes{
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: 150px;
+                gap: 15px;
+                .img7{
+                    grid-row: span 1;
+                }
+                .img1{
+                    grid-row: span 1;
+                }
+            }
+        }
+    }
+    main{
+        .ubicacion{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+                .linea{
+                    height: 2px;
+                }
+            } 
+        }
+        .nosotros{
+            .nosotros-imagen{
+                display: none;
+            }
+            .nosotros-texto{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                a{
+                    position: absolute;
+                    left: 120px;
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+        }
+        .products{
+            height: 900px;
+            padding-bottom:30px ;
+            .products-titulo{
+                h2{
+                    font-size: 25px;    
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+            .products-card{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content:space-evenly;
+                gap: 30px;
+                width: 70%;
+                .tarjetita{
+                    width: 50%;
+                }
+            }
         }
     }
 }
@@ -233,6 +458,65 @@
                         input{
                             font-size:12px ;
                         }
+                    }
+                }
+            }
+        }
+    }
+    .franquicias-main{
+        height: 650px;
+        .franquicias{
+            padding-top: 10px;
+            .franquicias-titulo{
+                h2{
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+            .franquicias-contenedor{
+                .franquicias-img{
+                    display: none;
+                }
+                .franquicias-txt{
+                    width: 90%;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .franquicias-boton{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .menu-main{
+        height: 1150px;
+        .grid-contenedor{
+            .menu-imagenes{
+                grid-area: menu;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: 150px;
+                gap: 20px;
+                margin: 10px 50px 0 50px;
+            }
+            .menu-titulo{
+                div{
+                    h2{
+                        font-size: 25px;
+                        font-weight: 200;
+                    }
+                    .linea{
+                        height: 2px;
                     }
                 }
             }
@@ -308,6 +592,19 @@
                 grid-auto-rows: 150px;
                 gap: 20px;
                 margin: 10px 50px 0 50px;
+                .menu-imagenes-contenedor{
+                    .menu-imagenes-over{
+                        h3{
+                            font-size: 16px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
             .menu-titulo{
                 div{
@@ -523,6 +820,9 @@
                 }
             }
         }
+    }
+    .franquicias-main{
+        height: 730px;
     }
 }
 
