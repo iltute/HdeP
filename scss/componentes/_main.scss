@@ -307,11 +307,11 @@ main{
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     background-attachment: fixed;
+    height: 745px;
     .grid-contenedor{
-        height: 745px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -320,7 +320,6 @@ main{
             "texto texto texto"
             "menu menu menu";
         .menu-titulo{
-            margin-top: 60px;
             grid-area: texto;
             display: flex;
             text-align: center;
@@ -341,7 +340,7 @@ main{
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 250px;
             gap: 20px;
-            margin: 50px 200px 0 200px;
+            margin: 10px 200px 0 200px;
             .menu-imagenes-contenedor{
                 position: relative;
                 background-color: $color-secundario;
@@ -461,9 +460,7 @@ main{
                 div{
                     display: flex;
                     justify-content: space-between;
-                    margin-left: 100px;
-                    margin-right: 100px;
-                    margin-top: 10px;
+                    margin: 10px 75px 0 75px ;
                     input{
                         border: 2px solid $color-secundario;
                         border-radius: 5px;
@@ -481,13 +478,10 @@ main{
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    margin-top: 0px;
+                    margin: 0 20px 0 20px;
                     div{
                         input{
-                            margin-left: 10px;
-                            margin-right: 10px;
+                            margin: 0 10px 0 10px;
                             background-color: $color-secundario;
                         }
                     }
@@ -525,7 +519,7 @@ main{
 }
 .franquicias-main{
     background-image: url(../img/m-background.jpg);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;

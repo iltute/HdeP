@@ -1,5 +1,3 @@
-/* MEDIAS DEL INDEX + FOOTER */
-
 @media screen and (max-width: 1024px) {
     main{
         .ubicacion{
@@ -82,10 +80,49 @@
             }
         }
     }
+    .menu-main{
+        height: 950px;
+        .grid-contenedor{
+            .menu-imagenes{
+                grid-area: menu;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 250px;
+                gap: 20px;
+                margin: 10px 100px 0 100px;
+            }
+        }
+    }
+    .franquicias-main{
+        height: 700px;
+        .franquicias{
+            .franquicias-contenedor{
+                width: 90%;
+                padding-top: 20px;
+                .franquicias-img{
+                    margin: 0px;
+                    width: 50%;
+                }
+                .franquicias-txt{
+                    margin: 0 0 0 20px;
+                    width: 50%;
+                    p{  
+                        font-size: 16px;
+                        margin: 0 0 20px 0;
+                        font-weight: 500;
+                    }
+                    ul{
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .franquicias-boton{
+                margin-top: 40px;
+            }
+        }
+    }
 }
-
-
-
 @media screen and (max-width: 733px) {
     main{
         .hero{
@@ -170,6 +207,30 @@
             }
         }
     }
+    .menu-main{
+        height: 1150px;
+        .grid-contenedor{
+            .menu-imagenes{
+                grid-area: menu;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: 150px;
+                gap: 20px;
+                margin: 10px 50px 0 50px;
+            }
+            .menu-titulo{
+                div{
+                    h2{
+                        font-size: 25px;
+                        font-weight: 200;
+                    }
+                    .linea{
+                        height: 2px;
+                    }
+                }
+            }
+        }
+    }
     footer{
         .footer-hdp{
             h4{
@@ -236,13 +297,94 @@
                 .img1{
                     grid-row: span 1;
                 }
-
             }
         }
-        
+    }
+    .franquicias-main{
+        height: 650px;
+        .franquicias{
+            padding-top: 10px;
+            .franquicias-titulo{
+                h2{
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+                .linea{
+                    height: 2px;
+                }
+            }
+            .franquicias-contenedor{
+                .franquicias-img{
+                    display: none;
+                }
+                .franquicias-txt{
+                    width: 90%;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .franquicias-boton{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .contacto{
+        .contacto-titulo{
+            margin: 0 0 20px 0;
+            h2{
+                font-size: 25px;
+                font-weight: 200;
+            }
+            .linea{
+                height: 2px;
+            }
+        }
+        .formulario{
+            width: 90%;
+            form{
+                width: 100%;
+                .personales{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    div{
+                        margin: 10px 20px 10px 20px;
+                        width: 90%;
+                    }
+                }
+                .personales-genero{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    div{
+                        margin: 0px;
+                        width: 75%;
+                    }
+                }
+                .comentarios{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+                    .comentarios-botones{
+                        input{
+                            font-size:12px ;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
 @media screen and (max-width: 377px) {
     main{
         .hero{
@@ -252,6 +394,43 @@
                 }
                 p{
                     font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 321px){
+    .franquicias-main{
+        height: 730px;
+    }
+    .contacto{
+        .formulario{
+            form{
+                .personales{
+                    div{
+                        margin: 5px 10px 5px 10px;
+                        width: 90%;
+                        input{
+                            width: 130px;
+                        }
+                    }
+                }
+                .personales-genero{
+                    div{
+                        margin: 0px;
+                        width: 75%;
+                        div{
+                            width: 50%;
+                            input{
+                                margin: 5px
+                            }
+                        }
+                    }
+                }
+                .comentarios{
+                    textarea{
+                        width: 90%;
+                    }
                 }
             }
         }
