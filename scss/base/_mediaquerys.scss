@@ -313,7 +313,7 @@
         height: auto;
         .nosotros-video{
             .nosotros-video-texto{
-                width: 98%;
+                width: 100%;
                 div{
                     h2{
                         font-size: 25px;                  
@@ -325,8 +325,8 @@
             }
             .nosotros-video-iframe{
                 iframe{
-                    width: 300px;
-                    height: 400px;
+                    width: 100%;
+                    height: 300px;
                 }
             }
         }
@@ -342,13 +342,16 @@
             }
             .nosotros-galeria-imagenes{
                 grid-template-columns: repeat(1, 1fr);
-                grid-auto-rows: 150px;
+                grid-auto-rows: 50px;
                 gap: 15px;
-                .img7{
-                    grid-row: span 1;
+                .img2{
+                    display: none;
                 }
-                .img1{
-                    grid-row: span 1;
+                .img5{
+                    display: none;
+                }
+                .img9{
+                    display: none;
                 }
             }
         }
@@ -659,7 +662,7 @@
         height: auto;
         .nosotros-video{
             .nosotros-video-texto{
-                width: 98%;
+                width: 100%;
                 div{
                     h2{
                         font-size: 25px;                  
@@ -671,8 +674,8 @@
             }
             .nosotros-video-iframe{
                 iframe{
-                    width: 300px;
-                    height: 400px;
+                    width: 100%;
+                    height: 300px;
                 }
             }
         }
@@ -688,13 +691,16 @@
             }
             .nosotros-galeria-imagenes{
                 grid-template-columns: repeat(1, 1fr);
-                grid-auto-rows: 150px;
+                grid-auto-rows: 50px;
                 gap: 15px;
-                .img7{
-                    grid-row: span 1;
+                .img2{
+                    display: none;
                 }
-                .img1{
-                    grid-row: span 1;
+                .img5{
+                    display: none;
+                }
+                .img9{
+                    display: none;
                 }
             }
         }
