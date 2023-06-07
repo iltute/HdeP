@@ -4,7 +4,7 @@
             .mapa{
                 width: 75%;
                 iframe{
-                    width: 100%;
+                    width: 98%;
                 }
             }
         }
@@ -13,18 +13,19 @@
 
 @media screen and (max-width: 900px){
     .nosotros-main{
-        height: 1700px;
+        height: auto;
         .nosotros-video{
-            width: auto;
-            height: auto;
-            padding-top: 30px  ;
+            height: 25%;
+            width: 100%;
+            padding-top: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .nosotros-video-texto{
                 text-align: center;
-                width: 500px;
+                width: 100%;
+                height: 100%;
                 div{
                     h2{
                         font-size: 40px;
@@ -36,15 +37,17 @@
             }
             .nosotros-video-iframe{
                 iframe{
-                    width: 600px;
-                    height: 500px;
+                    width: 100%;
+                    height: 300px;
                 }
             }
         }
         .nosotros-galeria-texto{
+            padding-top: 50px;
             display: flex;
             flex-direction: column;
-            padding-top: 150px;
+            width: 75%;
+            height: 75%;
             .ngt-1{
                 width: 75%;
                 h2{
@@ -55,14 +58,21 @@
                 }
             }
             .nosotros-galeria-imagenes{
-                height: auto;
+                height: 100%;
                 margin: 20px;
-                width: 80%;
+                width: 75%;
                 display: grid;
                 gap: 10px;
                 grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 150px;
+                grid-auto-rows: 75px;
                 .img7{
+                    display: none;
+                }
+                .img2{
+                    grid-row: span 2;
+                }
+                .img8{
+                    grid-column: span 1;
                     grid-row: span 2;
                 }
             }
@@ -78,7 +88,7 @@
             .mapa{
                 width: 75%;
                 iframe{
-                    width: 100%;
+                    width: 98%;
                 }
             }
         }
@@ -87,18 +97,19 @@
         }   
     }
     .nosotros-main{
-        height: 1700px;
+        height: auto;
         .nosotros-video{
-            width: auto;
-            height: auto;
-            padding-top: 30px  ;
+            width: 100%;
+            height: 25%;
+            padding-top: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .nosotros-video-texto{
                 text-align: center;
-                width: 500px;
+                width: 100%;
+                height: 100%;
                 div{
                     h2{
                         font-size: 40px;
@@ -110,15 +121,15 @@
             }
             .nosotros-video-iframe{
                 iframe{
-                    width: 600px;
-                    height: 500px;
+                    width: 100%;
+                    height: 300px;
                 }
             }
         }
         .nosotros-galeria-texto{
             display: flex;
             flex-direction: column;
-            padding-top: 150px;
+            padding-top: 50px;
             .ngt-1{
                 width: 75%;
                 h2{
@@ -129,13 +140,13 @@
                 }
             }
             .nosotros-galeria-imagenes{
-                height: auto;
+                height: 100%;
                 margin: 20px;
-                width: 80%;
+                width: 75%;
                 display: grid;
                 gap: 10px;
                 grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 150px;
+                grid-auto-rows: 75px;
                 .img7{
                     grid-row: span 2;
                 }
