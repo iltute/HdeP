@@ -1,7 +1,5 @@
 .main-index{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flexcc;
     .hero{
         background-image: url(../img/m-background.jpg);
         background-color: rgba(0, 0, 0, 0.6);
@@ -10,12 +8,9 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        color: $color-terciario;
+        @extend %flexcc;
         text-align: center;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 90dvh;
         width: 100%;
         .hero-titulo{
@@ -23,7 +18,6 @@
                 font-size: 100px;
                 font-weight: 500;
                 padding: 10px;
-                color: #ffffff;
             }
             p{
                 font-size: 40px;
@@ -34,12 +28,10 @@
     }
     .nosotros{
         background-color: $color-primario;
-        display: flex;
-        justify-content: space-evenly; 
-        align-items: center;
+        @include flex (flex, space-evenly, center);
         height: 650px;
-        padding: 10px;
         width: 75%;
+        padding: 10px;
         .nosotros-texto{
             width: 300px;
             position: relative;
@@ -49,35 +41,34 @@
                 text-align: center;
             }
             .linea{
-                background-color: $color-secundario;
                 height: 4px;
+                background-color: $color-secundario;
                 border-radius: 15px;
                 margin-bottom: 10px;
             }
             p{
+                color: $color-terciario;
                 text-align: left;
                 font-size: 18px;
-                color: #ffffff;
-                padding: 10px 10px 50px 10px;
                 font-weight: 100;
+                padding: 10px 10px 50px 10px;
             }
             a{
                 position: absolute;
                 bottom: 0;
                 left: 10px;
-                border: $color-secundario 1px solid;
                 padding: 2px;
+                border: $color-secundario 1px solid;
+                border-radius: 5px;
                 color: $color-secundario;
                 font-size: 13px;
                 font-weight: 200;
-                border-radius: 5px;
                 transition: 0.5s ease-in;
                 &:hover{
-                    background-color: #ffffff;
+                    background-color: $color-terciario;
                     color: $color-secundario;
                     border: $color-secundario 3px solid;
                     font-weight: 400;
-                    padding: 2px;
                     padding: 5px;
                     border-radius: 5px;
                 }
@@ -101,21 +92,19 @@
     .ubicacion{
         height: 600px;
         width: 75%;
-        display: flex;
+        @include flex (flex, space-evenly, center);
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         text-align: center;
         background-color: $color-primario;
-        color: #ffffff;
+        color: $color-terciario;
         div{
             h2{
                 font-size: 35px;
                 font-weight: 200;
             }
             .linea{
-                background-color: $color-secundario;
                 height: 4px;
+                background-color: $color-secundario;
                 border-radius: 15px;
                 margin-bottom: 10px;
             }
@@ -133,62 +122,55 @@
         }
     }
     .products{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        background-color: $color-primario;
-        color: #ffffff;
         height: 600px;
         width: 75%;
+        @include flex (flex, space-evenly, center);
+        flex-direction: column;
+        text-align: center;
+        background-color: $color-primario;
+        color: $color-terciario;
         .products-titulo{
             h2{
                 font-size: 35px;
                 font-weight: 200;
-                color: #ffffff;
+                color: $color-terciario;
             }
             .linea{
-                background-color: $color-secundario;
                 height: 4px;
+                background-color: $color-secundario;
                 border-radius: 15px;
                 margin-bottom: 10px;
             }
         }
         .products-card{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
             height: 90%;
+            width: 100%;
+            @include flex (flex, space-evenly, center);
+            flex-wrap: wrap;
             .tarjetita{
+                height: 75%;
+                width: 20%;
                 position: relative;
                 border: 2px solid #eb880e56;
                 border-radius: 15px;
                 box-shadow: 5px 5px 5px #eb880e56;
                 display: flex;
                 justify-content: center;
-                width: 20%;
-                height: 75%;
                 img{
-                    border-radius: 15px;
                     height: 100%;
                     width: 100%;
+                    border-radius: 15px;
                     object-fit: cover;
                 }
                 .tarjetita-hover{
-                    position: absolute;
-                    opacity: 0; 
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    align-items: center;
-                    justify-content: center;
                     height: 100%;
                     width: 100%;
+                    position: absolute;
+                    opacity: 0; 
+                    @extend %flexcc;
+                    text-align: center;
                     text-decoration: none;
-                    color: #ffffff;
+                    color: $color-terciario;
                     transition: 0.5s;
                     &:hover{
                         border-radius: 15px;
@@ -201,16 +183,16 @@
                     bottom: -20px;
                     padding: 5px;
                     background-color: $color-secundario;
-                    color: #ffffff;
+                    color: $color-terciario;
                     border: solid white 2px;
                     border-radius: 15px;
+                    font-weight: 600;
                     text-decoration: none;
                     filter: drop-shadow(5px 5px 2px black);
-                    font-weight: 600;
                     transition: 0.5s ease-in;
                     &:hover{
                         background-color: #25D366;
-                        color: #ffffff;
+                        color: $color-terciario;
                         border: $color-secundario 3px solid;
                         padding: 2px;
                         padding: 7px;
@@ -231,22 +213,16 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flexcc;
     .nosotros-video{
         height: 47%;
         width: 75%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (flex, space-evenly, center);
         text-align: center;
         .nosotros-video-texto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: right;
             width: 25%;
+            @extend %flexcenter;
+            text-align: right;
             div{
                 h2{
                     font-weight: 600;
@@ -284,7 +260,7 @@
             h2{
                 font-size: 60px;
                 font-weight: 600;  
-                color: #ffffff;              
+                color: $color-terciario;              
             }
             p{
                 font-size: 30px;
@@ -294,8 +270,8 @@
         }
         .nosotros-galeria-imagenes{
             height: auto;
-            margin: 20px;
             width: 50%;
+            margin: 20px;
             display: grid;
             gap: 10px;
             grid-template-columns: repeat(3, 1fr);
@@ -361,14 +337,12 @@
             "menu menu menu";
         .menu-titulo{
             grid-area: texto;
-            display: flex;
+            @extend %flexcenter;
             text-align: center;
-            align-items: center;
-            justify-content: center;
             div{
                 .linea{
-                    background-color: $color-secundario;
                     height: 4px;
+                    background-color: $color-secundario;
                     border-radius: 15px;
                     margin-bottom: 10px;
                 }
@@ -384,42 +358,36 @@
             .menu-imagenes-contenedor{
                 position: relative;
                 background-color: $color-secundario;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 15px;
+                @extend %flexcc;
                 border: 2px #ffffff solid;
+                border-radius: 15px;
                 box-shadow: -3px 3px 1px #ffffff;
                 &:hover{
                     background-color: rgba(0, 0, 0, 0.5);
                 }
                 img{
-                    width: 98%;
                     height: 98%;
+                    width: 98%;
                     object-fit: cover;
                     overflow: hidden;
                     border-radius: 15px;
                     box-shadow: -3px 3px 3px black;
                 }
                 .menu-imagenes-over{
-                    position: absolute;
-                    opacity: 0; 
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    align-items: center;
-                    justify-content: center;
                     height: 100%;
                     width: 100%;
+                    position: absolute;
+                    opacity: 0; 
+                    @extend %flexcc;
+                    text-align: center;
                     text-decoration: none;
-                    color: #ffffff;
+                    color: $color-terciario;
                     transition: 0.5s;
                     a{
                         text-decoration: none;
                         text-align: center;
-                        background-color:$color-secundario;
-                        color:#ffffff;
+                        background-color: $color-secundario;
+                        color: $color-terciario;
                         margin: 5px;
                         padding: 5px;
                         width: 100px;
@@ -427,34 +395,34 @@
                         transition: 0.5s ease-in;
                     }
                     p{
-                        color: #ffffff;
+                        color: $color-terciario;
                         text-align: center;
-                        max-width: 90%;
                         max-height: 100px;
+                        max-width: 90%;
                         word-wrap: break-word;
                     }
                     &:hover{
+                        background-color: rgba(0, 0, 0, 0.8);
                         color: $color-secundario;
                         border-radius: 15px;
                         opacity: 1;
-                        background-color: rgba(0, 0, 0, 0.8);
                         a{
+                            width: 100px;
+                            background-color:$color-secundario;
                             text-decoration: none;
                             text-align: center;
-                            background-color:$color-secundario;
-                            color:#ffffff;
+                            color: $color-terciario;
                             margin: 5px;
                             padding: 5px;
-                            width: 100px;
                             border-radius: 10px;
                             transition: 0.5s ease-in;
                             &:hover{
-                                text-align: center;
+                                width: 100px;
                                 background-color: #25D366;
-                                color: #ffffff;
+                                text-align: center;
+                                color: $color-terciario;
                                 margin: 5px;
                                 padding: 5px;
-                                width: 100px;
                                 border-radius: 10px;
                                 transition: 0.5s ease-in;
                             }
@@ -474,25 +442,22 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #ffffff;
+    color: $color-terciario;
     height: 93dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcc;
     text-align: center;
     .contacto-titulo{
         margin-bottom: 50px;
         .linea{
-            background-color: $color-secundario;
             height: 4px;
+            background-color: $color-secundario;
             border-radius: 15px;
             margin-bottom: 10px; 
         }
     }
     .formulario{
-        background-color: #201a17ab;
         width: 500px;
+        background-color: #201a17ab;
         border: $color-secundario 2px solid;
         border-radius: 15px;
         form{
@@ -502,22 +467,20 @@
                     justify-content: space-between;
                     margin: 10px 75px 0 75px ;
                     input{
+                        background-color: #ffffffab;
                         border: 2px solid $color-secundario;
                         border-radius: 5px;
-                        background-color: #ffffffab;
                         text-align: center;
                     }
                 }
             }
             .personales-genero{
                 display: flex;
-                align-items: center;
                 flex-direction: column;
+                align-items: center;
                 margin-top: 10px;
                 div{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    @include flex (flex, space-around, center);
                     margin: 0 20px 0 20px;
                     div{
                         input{
@@ -531,24 +494,24 @@
                 margin-top: 10px;
                 textarea{
                     height: 50%;
+                    background-color: #ffffffab;
                     border: $color-secundario 2px solid;
                     border-radius: 15px;
-                    background-color: #ffffffab;
                     text-align: center;
                 }
                 .comentarios-botones{
                     input{
+                        width: 100px;
+                        background-color: $color-secundario;
                         font-size: 15px;
                         text-align: center;
-                        background-color: $color-secundario;
-                        color: #ffffff;
+                        color: $color-terciario;
                         margin: 5px;
                         padding: 5px;
-                        width: 100px;
                         border-radius: 10px;
                         transition: 0.5s ease-in;
                         &:hover{
-                            background-color: #ffffff;
+                            background-color: $color-terciario;
                             color: $color-secundario;
                         }
                     }
@@ -571,21 +534,21 @@
         padding-top: 50px;
         display: flex;
         flex-direction: column;
-        text-align: center;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
         .franquicias-titulo{
             .linea{
-                background-color: $color-secundario;
                 height: 4px;
+                background-color: $color-secundario;
                 border-radius: 15px;
                 margin-bottom: 10px;                
             }
         }
         .franquicias-contenedor{
+            height: 100%;
             display: flex;
             justify-content: space-between;
-            height: 100%;
             .franquicias-img{
                 height: auto;
                 width: 100%;
@@ -604,7 +567,7 @@
             }
             .franquicias-txt{
                 margin: 20px;
-                color: #ffffff;
+                color: $color-terciario;
                 p{
                     text-align: left;
                     margin-top: 20px;
@@ -623,13 +586,13 @@
                 left: 250px;
                 bottom: 20px;
                 background-color: $color-secundario;
-                color: #ffffff;
+                color: $color-terciario;
                 border: $color-secundario 3px solid;
                 border-radius: 5px;
                 padding: 5px;
                 transition: 0.5s ease-in;
                 &:hover{
-                background-color: #ffffff;
+                    background-color: $color-terciario;
                     color: $color-secundario;
                     border: $color-secundario 3px solid;
                     font-weight: 400;

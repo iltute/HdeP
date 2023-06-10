@@ -1,13 +1,23 @@
 $color-primario: #212529;
 $color-secundario: #eb880e;
+$color-terciario: #fff;
 
 
-//* aplicar en todo el proyecto este mixing
+%flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexcc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin  flex ($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;
     align-items: $align;
 }   
-@mixin  boder () {
-    
-}
