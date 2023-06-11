@@ -40,6 +40,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center; }
+    header nav div a h1 {
+      font-size: 20px;
+      font-weight: 300; }
 
 .main-index .hero {
   background-image: url(../img/m-background.jpg);
